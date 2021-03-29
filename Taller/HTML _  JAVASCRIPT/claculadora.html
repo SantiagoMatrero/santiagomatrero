@@ -1,0 +1,53 @@
+<html>
+
+    <body>
+
+        <p>Primer operando</p>
+        <input type="number" id="primernum">
+
+        <p>Segundo operando</p>
+        <input type="number" id="segundonum">
+
+        <button onclick="suma()">Sumar</button>
+        <button onclick="resta()">Restar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+
+        <h1 id="respuesta"></h1>
+
+    </body>
+
+
+    <script>
+
+        function suma(){
+            var numerouno = document.getElementById("primernum").value;
+            var segundonum = document.getElementById("segundonum").value;
+            var resultado = parseInt(numerouno) + parseInt(segundonum);
+            document.getElementById("respuesta").innerHTML=resultado;
+        }
+
+        function resta(){
+            var numerouno = document.getElementById("primernum").value;
+            var segundonum = document.getElementById("segundonum").value;
+            var resultado = parseInt(numerouno) - parseInt(segundonum);
+            document.getElementById("respuesta").innerHTML=resultado;
+        }
+
+        function multiplicar(){
+            var numerouno = document.getElementById("primernum").value;
+            var segundonum = document.getElementById("segundonum").value;
+            var resultado = parseInt(numerouno) * parseInt(segundonum);
+            document.getElementById("respuesta").innerHTML=resultado;
+        }
+
+        function dividir(){
+            var numerouno = document.getElementById("primernum").value;
+            var segundonum = document.getElementById("segundonum").value;
+            var resultado = parseInt(numerouno) / parseInt(segundonum);
+            document.getElementById("respuesta").innerHTML=resultado;
+        }
+
+
+    </script>
+</html>
