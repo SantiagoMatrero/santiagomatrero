@@ -1,0 +1,19 @@
+1. Una clase es el molde para crear objetos, en ella tiene todos los atributos de este objeto.
+2. Un objeto es algo que existe en la vida real y que tiene unos atributos.
+3. Un constructor es un metodo al cual se le llama para poder crear un objeto de esa clase.
+4. Persona p1 = new Persona("Manuel", 2222222);
+Persona p2 = new Persona(222222);
+5. Infinitos.
+6. Los atributos de una clase son por los que vamos a identificar a esta, representan las caracteristicas del objeto.
+7. Los metodos de una clase son funciones que implementamos con esa clase.
+8. Si.
+9. "This" hace referencia a lo que hay dentro de una variable en vez de a su posicion en memoria.
+10. Deben tener la misma posicion en memoria.
+11. Sirve para inicializar una instancia creada por el usuario o uno de los objetos integrados que tiene una funcion constructora.
+12. False.
+13. Sirve para agrupar distintos archivos y poder trabajar con todos ellos.
+14. Para agregar una biblioteca a ese sistema.
+15. Para poder recibir lo que el usuario ingresa por consola.
+16. Un Arraylist es una lista de variables con orden.
+17. Un Hashset es una lista de variables pero no tiene orden.
+18. Un Hashmap es una lista de un par de variables que no tiene orden.
