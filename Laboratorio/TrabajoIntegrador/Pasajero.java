@@ -2,6 +2,7 @@ package com.company;
 
 public class Pasajero {
 
+    private String nombre;
     private String apellido;
     private TarjetaEquis tarjeta;
 
