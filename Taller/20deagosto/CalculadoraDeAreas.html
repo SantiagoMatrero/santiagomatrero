@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="calculadorareas.js"></script>
+        <title>Areas de figuras</title>
+        <link rel="stylesheet" type="text/css" href="areas.css">
+    </head>
+    <body>
+
+        <h1>Ingrese los valores necesarios para la accion que desea realizar</h1>
+
+        <tr>
+            <th><input type="text" id="Radio" class="input" placeholder="radio"></th>
+            <th><input type="text" id="Lado" class="input" placeholder="lado"></th>
+            <th><input type="text" id="Base" class="input" placeholder="base"></th>
+            <th><input type="text" id="Altura" class="input" placeholder="altura"></th>
+        </tr>
+
+        <ul id="lista1">
+            <li>
+                <button type="button" id="circulo" onclick="circulo()" >Circulo</button>
+            </li>
+            <li>
+                <button type="button" id="esfera" onclick="esfera()" >Esfera</button>
+            </li>
+            <li>
+                <button type="button" id="cuadrado" onclick="cuadrado()" >Cuadrado</button>
+            </li>
+            <li>
+                <button type="button" id="cubo" onclick="cubo()" >Cubo</button>
+            </li>
+            <li>
+                <button type="button" id="triangulo" onclick="triangulo()" >Triangulo</button>
+            </li>
+        </ul>
+
+        <h1 id="resultado"></h1>
+
+    </body>
+</html>
