@@ -1,0 +1,44 @@
+
+
+body{
+    background-color:rgb(26, 22, 22);
+}
+
+#titulo{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 200px;
+    color: white;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+}
+
+#nombre{
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 200px;
+    color: #732F21;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+}
+
+#texto{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 200px;
+    color: white;
+}
+
+#github{
+    margin-left: 1780px;
+    position: absolute;
+    display: flex;
+    color: white;
+}
+
+
+
+
+
