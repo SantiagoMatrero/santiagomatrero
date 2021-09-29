@@ -1,0 +1,5 @@
+a. En el caso de que las salas tengan algun atributo que las haga distintas (como por ejemplo la cantidad de lentes 3d, que igualmente tendria que ser igual a la de asientos), haria que la clase de salas 3d herede lo de la clase 2d, pero si lo unico que cambia entre una y otra es que una es 2d y la otra es 3d, podria hacer un atributo que lo especifique.
+
+b. Le agreagria un atributo edad a la clase Visitante, el cual podria usar en algun metodo que retorne true si es mayor a 18.
+
+c. Se me ocurren varias formas para resolverlo, como agregarle a la clase visitante un atributo que sea ultima visita, o agregar un ArrayList a la clase Cine y siempre que entre un nuevo visitante agregarlo, para poder sacar el ultimo agregado.
