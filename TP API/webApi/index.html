@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript" src="jquery.js">
+        <script type="text/javascript" src="deleteAjax.js"></script>
+        <script type="text/javascript" src="postAjax.js"></script>
+        <script type="text/javascript" src="patchAjax.js"></script>
+        <script type="text/javascript" src="getAjax.js"></script>
+
+
+
+
+    </head>
+
+    <body>
+
+        <div>
+            <ul>
+                <div id="deleteAlumno">
+                    <h1>Delete Alumno</h1>
+                    <input id="inputIdDelete" placeholder="Id" type="number">
+                    <button onclick="deletePorId()">delete</button>
+                </div>
+
+                <div id="getAlumno">
+                    <h2>Get Alumno</h2>
+                    <input id="inputIdGet" placeholder="Id" type="number">
+                    <button onclick="getPorId()">get</button>
+                    <button onclick="getTodos()">get todos</button>
+                </div>
+
+                <div id="postAlumno">
+                    <h3>Post Alumno</h3>
+                    <input id="inputNombrePost" placeholder="Nombre"><br>
+                    <input id="inputEdadPost" placeholder="Edad" type="number">
+                    <button onclick="post()">post</button>
+                </div>
+
+                <div id="patchAlumno">
+                    <h4>Patch Alumno</h4>
+                    <input id="inputIdUpdate" placeholder="Id" type="number"><br><br>
+                    <input id="inputNombreUpdate" placeholder="Nombre"><br>
+                    <input id="inputEdadUpdate" placeholder="Edad" type="number">
+                    <button onclick="patch()">update</button>
+                </div>
+            </ul>
+            <pre id="respuestas"></pre>
+        </div>
+
+    </body>
+
+</html>
