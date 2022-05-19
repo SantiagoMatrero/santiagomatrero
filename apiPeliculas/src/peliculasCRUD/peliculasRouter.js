@@ -7,14 +7,14 @@ const { getPeliculaPorId, filtrarPeliculaPorNombre, eliminarPeliculaPorId, postP
 
 peliculasRouter.post('/:id/comentarios', agregarComentario)
 
-peliculasRouter.route('/')
-    .get(filtrarPeliculaPorNombre)
-    .post(postPelicula)
-
 peliculasRouter.route('/:id')
     .get(getPeliculaPorId)
     .delete(eliminarPeliculaPorId)
     .patch(modificarPeliculaPorId)
+
+peliculasRouter.route('/')
+    .get(filtrarPeliculaPorNombre)
+    .post(postPelicula)
 
 
 module.exports = peliculasRouter

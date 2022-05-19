@@ -1,24 +1,23 @@
 const mongoose = require("mongoose")
+const { Schema } = mongoose
 
-const peliculasSchema = new mongoose.Schema({
-    nombre: {type : String},
-    anioEstreno:{type : Number},
-    director:{type : String},
-    elenco: {type : [String]},
-    comentarios:{type :[String]}
-})
+const Pelicula = new Schema({
+    id: String,
+    nombre: String,
+    anioEstreno: String,
+    director: String,
+    elenco: [String],
+    comentarios: [String]
+},)
 
-peliculasSchema.statics.buscarPorId  = function(_id){
-    return this.findById({_id: _id})
+Pelicula.statics.buscarPorId  = function(id){
+    return this.findOne({_id: id})
 }
 
-peliculasSchema.statics.eliminarPorId  = function(id){
-    return this.delete({_id: id})
+Pelicula.statics.buscarPorNombre  = function(nombre){
+    return this.find( { 'nombre': new RegExp(nombre) } )
 }
 
-peliculasSchema.statics.postPelicula = function(){
-    return this.create({"nombre": req.body.nombre, "anioEstreno": req.body.anioEstreno, "Director": req.body.director, "Elenco": req.body.elenco, "Comentarios": req.body.comentarios })
-} 
 
 
-module.exports = mongoose.model("Pelicula", peliculasSchema)
+module.exports = mongoose.model("Pelicula", Pelicula)
