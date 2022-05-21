@@ -2,19 +2,19 @@ const express = require('express');
 const peliculasRouter = express.Router();
 
 const { getPeliculaPorId, filtrarPeliculaPorNombre, eliminarPeliculaPorId, postPelicula, agregarComentario, modificarPeliculaPorId } = require("./peliculasController.js");
+const {validatorId, validatorModificarPelicula, validatorBuscarPeliculaPorNombre, validatorAgregarPeliculas, validatorAgregarComentario} = require("../authCRUD/authValidator")
 
 
-
-peliculasRouter.post('/:id/comentarios', agregarComentario)
+peliculasRouter.post('/:id/comentarios', validatorId, validatorAgregarComentario, agregarComentario)
 
 peliculasRouter.route('/:id')
-    .get(getPeliculaPorId)
-    .delete(eliminarPeliculaPorId)
-    .patch(modificarPeliculaPorId)
+    .get(validatorId, getPeliculaPorId)
+    .delete(validatorId, eliminarPeliculaPorId)
+    .patch(validatorId, validatorModificarPelicula, modificarPeliculaPorId)
 
 peliculasRouter.route('/')
-    .get(filtrarPeliculaPorNombre)
-    .post(postPelicula)
+    .get(validatorBuscarPeliculaPorNombre, filtrarPeliculaPorNombre)
+    .post(validatorAgregarPeliculas, postPelicula)
 
 
 module.exports = peliculasRouter

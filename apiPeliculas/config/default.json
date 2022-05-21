@@ -1,3 +1,7 @@
 {
-    "mongodbUri" : "mongodb://localhost:27017/peliculas"
+    "mongoUri" : "mongodb://localhost:27017/peliculas",
+    "Authentication" : {
+            "jwtExpiry" : "365 days",
+            "jwtSecret" : "334o9wrfjopfuw339234875jgk3bjuytrfgbhj2ht4d3543j5hg45jh3ghg3f4hg234fjh3g24g3jh4"
+    }
 }
